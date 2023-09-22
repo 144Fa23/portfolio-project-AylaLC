@@ -1,0 +1,85 @@
+/*
+Author: Ayla Campbell
+Date: 09/21/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3 div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #f6eee4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+/* Style rule for header */
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.75em;
+    background-color: #d4aab3;
+}
+
+/* Style ryles for navigation area */
+nav {
+    background-color: #2a1f14;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: Verdan, Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 1em;
+    text-align: center;
+}
+
+#education {
+    text-align: left;
+}
+
+.external-link {
+    text-decoration: none;
+}
+
+/* Style rules for footer content */
+footer {
+    font-size: 1em;
+    text-align: center;
+    color: #f6eee4;
+    padding: 0 1em;
+    background-color: #2a1f14;
+}
