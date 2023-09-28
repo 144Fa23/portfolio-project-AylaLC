@@ -13,27 +13,30 @@ body, header, nav, main, footer, h1, h2, h3 div, img {
 
 /* Style rules for body and images */
 body {
-    background-color: #f6eee4;
+    background-color: #fffef2;
 }
 
 img {
     max-width: 100%;
-    display: block;
-    text-align: center;
+    display: inline-block;
     margin: auto;
 }
+
+/* Style rules for mobile viewport */
+
 
 /* Style rule for header */
 header {
     width: 100%;
     text-align: center;
     font-size: 1.75em;
-    background-color: #d4aab3;
+    background-color: #fffef2;
+    font-family: 'Onest', sans-serif;
 }
 
 /* Style ryles for navigation area */
 nav {
-    background-color: #2a1f14;
+    background-color: #659DBD;
     text-decoration: none;
 }
 
@@ -44,18 +47,32 @@ nav ul {
 }
 
 nav li {
+/*
     display: inline-block;
-    font-size: 1.5em
+*/
+    display: block;
+    font-size: 1.5em;
+    border-top: 1px solid #fffef2;
 }
 
 nav li a {
     display: block;
-    color: #f6eee4;
+    color: #fffef2;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-right: 0.75em;
     padding-left: 0.75em;
     text-decoration: none;
+}
+
+/*show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+    text-align: left;
+}
+
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for main content */
@@ -67,19 +84,33 @@ main {
     text-align: center;
 }
 
-#education {
+
+#college {
+    text-align:left;
+}
+
+/*#education {
     text-align: left;
+} */
+
+.tel-link a {
+    text-decoration: none;
 }
 
 .external-link {
     text-decoration: none;
 }
 
+.round {
+    border-radius: 8px;
+}
+
+
 /* Style rules for footer content */
 footer {
     font-size: 1em;
     text-align: center;
-    color: #f6eee4;
+    color: #fffef2;
     padding: 0;
-    background-color: #2a1f14;
+    background-color: #659dbd;
 }
