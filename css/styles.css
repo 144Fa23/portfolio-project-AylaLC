@@ -5,7 +5,15 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h2, h3 div, img {
+body,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+h3 div,
+img {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,12 +26,11 @@ body {
 
 img {
     max-width: 100%;
-    display: inline-block;
+    /* display: inline-block; */
     margin: auto;
 }
 
 /* Style rules for mobile viewport */
-
 
 /* Style rule for header */
 header {
@@ -47,7 +54,7 @@ nav ul {
 }
 
 nav li {
-/*
+    /*
     display: inline-block;
 */
     display: block;
@@ -68,7 +75,6 @@ nav li a {
 /*show mobile class, hide tablet-desktop class */
 .mobile {
     display: block;
-    text-align: left;
 }
 
 .tablet-desktop {
@@ -81,22 +87,19 @@ main {
     font-family: Verdan, Arial, sans-serif;
     font-size: 1.2em;
     margin: 1em;
+    text-align: left;
+}
+
+/* Style rules for div ids */
+#welcome {
     text-align: center;
 }
 
-
-#college {
-    text-align:left;
+#contact {
+    text-align: center;
 }
 
-#about {
-    text-align: left;
-}
-
-/*#education {
-    text-align: left;
-} */
-
+/* Style rules for div classes */
 .tel-link a {
     text-decoration: none;
 }
@@ -107,6 +110,67 @@ main {
 
 .round {
     border-radius: 8px;
+}
+
+.map {
+    margin: auto;
+}
+
+/* Style rules for iframes */
+iframe {
+    max-width: 960px;
+    margin: auto;
+    height: 450px;
+    display: block;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+
+    /* Tablet Viewport: show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+
+    nav li a {
+        padding: 0.1em 0.75em
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    .mobile {
+        display: none;
+    }
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        padding-bottom: 1%;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a:hover {
+        color: #659dbd;
+        background-color: #fffef2;
+    }
+
+    /*Desktop Viewport: Style for div ids */
+    #letter {
+        display: inline-block
+    }
 }
 
 
